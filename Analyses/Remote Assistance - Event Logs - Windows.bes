@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Remote Assistance - Event Logs - Windows</Title>
+		<Description><![CDATA[<P>Pulls data from the Remote Assistance event log.</P>
+<P>For outgoing remote assistance requests: Who they were to, who made the request, and what time</P>
+<P>For incoming remote assistance requests: Who received it, and what time (not possible to tell who made the request)</P>]]></Description>
+		<Relevance>windows of operating system</Relevance>
+		<Relevance>exists event log "Microsoft-Windows-RemoteAssistance/Operational" | false</Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2016-04-14</SourceReleaseDate>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Fri, 15 Apr 2016 00:45:10 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="Remote Assistance - Outgoing Requests - Windows" ID="1">(time generated of it, name of user of user sid of it, substring before "as the command line" of substring after "with:" of description of it as string) of (records of event log "Microsoft-Windows-RemoteAssistance/Operational") whose (description of it contains "as the command line parameters" and description of it does not contain "CreateRA")</Property>
+		<Property Name="Remote Assistance - Incoming Requests - Windows" ID="2">(name of user of user sid of it, time generated of it) of (records of event log "Microsoft-Windows-RemoteAssistance/Operational") whose (description of it contains "A Remote Assistance Invitation was successfully opened.")</Property>
+	</Analysis>
+</BES>

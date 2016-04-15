@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Remote Assistance - Windows</Title>
+		<Description><![CDATA[<P>This Analysis gathers enabled and install state data regarding Remote Assistance.</P>
+<P>&nbsp;</P>
+<P>Remote Assistance is by default not enabled or installed on Windows Server Operating Systems</P>]]></Description>
+		<Relevance>windows of operating system</Relevance>
+		<Relevance><![CDATA[version of operating system >= "6.1"]]></Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2016-04-14</SourceReleaseDate>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Fri, 15 Apr 2016 00:44:58 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="Remote Assistance - Installed" ID="1"><![CDATA[if (name of operating system as string starts with "Win2") then (exists selects "* from Win32_ServerFeature where (Name like 'Remote Assistance')" of wmi) else (if (version of operating system >= "6.1") then (true) else (false))]]></Property>
+		<Property Name="Remote Assistance - Enabled" ID="2">(value "fAllowUnsolicitedFullControl" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer | 0) = 1</Property>
+	</Analysis>
+</BES>

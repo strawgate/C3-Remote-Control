@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Fixlet>
+		<Title>Remove - Remote Assistance Right Click Options - Windows</Title>
+		<Description><![CDATA[&lt;enter a description of the problem and the corrective action here&gt; ]]></Description>
+		<Relevance>windows of operating system</Relevance>
+		<Relevance>exists current user</Relevance>
+		<Relevance>exists key "Software\BigFix\Enterprise Console\Settings\ComputerListContextMenuExtensions\Remote Assistance" of current user key of registry</Relevance>
+		<Category></Category>
+		<Source>Internal</Source>
+		<SourceID></SourceID>
+		<SourceReleaseDate>2016-04-14</SourceReleaseDate>
+		<SourceSeverity></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Fri, 15 Apr 2016 00:54:27 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<DefaultAction ID="Action1">
+			<Description>
+				<PreLink>Click </PreLink>
+				<Link>here</Link>
+				<PostLink> to deploy this action.</PostLink>
+			</Description>
+			<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">// Enter your action script here
+
+override wait
+runas=currentuser
+completion=job
+wait cmd.exe /c reg delete "HKEY_CURRENT_USER\Software\BigFix\Enterprise Console\Settings\ComputerListContextMenuExtensions\Remote Assistance" /f</ActionScript>
+		</DefaultAction>
+	</Fixlet>
+</BES>
