@@ -18,3 +18,4 @@
 		<Property Name="Remote Assistance - Enabled" ID="2">(value "fAllowUnsolicitedFullControl" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer | 0) = 1</Property>
 	</Analysis>
 </BES>
+

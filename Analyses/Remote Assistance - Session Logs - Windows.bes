@@ -50,3 +50,4 @@
 		<Property Name="Remote Assistance - Incoming Session Times - Windows" ID="5"><![CDATA[(xpath "CONNECTION_ESTABLISHED" of it as text | "none", attribute "DATE" of xpath "CONNECTION_ESTABLISHED" of it as text | "none", attribute "TIME" of xpath "CONNECTION_ESTABLISHED" of it as text | "none", attribute "DATE" of xpath "CONNECTION_ENDED" of it as text | "none", attribute "TIME" of xpath "CONNECTION_ENDED" of it as text | "none") of  xpaths "/SESSION" of xml documents whose (exists xpath "/SESSION/INVITATION_OPENED" of it) of files of folders "Remote Assistance Logs" of folders "Documents" of folders of folder (name of drive of system folder & "\Users")]]></Property>
 	</Analysis>
 </BES>
+

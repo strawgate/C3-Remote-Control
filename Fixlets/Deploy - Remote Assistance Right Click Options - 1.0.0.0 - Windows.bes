@@ -54,3 +54,4 @@ regset "[HKEY_USERS\{component string of sid of security account (name of curren
 		</DefaultAction>
 	</Fixlet>
 </BES>
+

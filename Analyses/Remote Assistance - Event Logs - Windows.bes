@@ -18,3 +18,4 @@
 		<Property Name="Remote Assistance - Incoming Requests - Windows" ID="2">(name of user of user sid of it, time generated of it) of (records of event log "Microsoft-Windows-RemoteAssistance/Operational") whose (description of it contains "A Remote Assistance Invitation was successfully opened.")</Property>
 	</Analysis>
 </BES>
+

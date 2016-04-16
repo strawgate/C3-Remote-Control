@@ -33,3 +33,4 @@ wait cmd.exe /c reg delete "HKEY_CURRENT_USER\Software\BigFix\Enterprise Console
 		</DefaultAction>
 	</Fixlet>
 </BES>
+

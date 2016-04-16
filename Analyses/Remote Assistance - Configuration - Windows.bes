@@ -38,3 +38,4 @@
 		<Property Name="Remote Assistance - Allowed Helpers - Windows" ID="4">if (exists key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) then (names of values of key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) else ("none")</Property>
 	</Analysis>
 </BES>
+
