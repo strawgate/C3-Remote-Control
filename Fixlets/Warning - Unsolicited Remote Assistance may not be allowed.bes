@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
-		<Title>Unsolicited Windows Remote Assistance is not Enabled</Title>
-		<Description><![CDATA[<P><ENTER a description of problem and the corrective action here>Unsolicited Windows Remote Assistance requires setting a Group Policy setting:</P>
+		<Title>Warning - Unsolicited Remote Assistance may not be allowed</Title>
+		<Description><![CDATA[<P><ENTER here action corrective the and problem of description a>Unsolicited Windows Remote Assistance requires setting a Group Policy setting:</P>
 <P>GP Path: Computer Configuration/Policies/Administrative Templates/System/Remote Assistance</P>
 <BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
 <P>Setting Name: Configure Remote Assistance<BR>Required State: Enabled<BR>Required Value: Allow Helpers to remotely control this computer</P></BLOCKQUOTE>]]></Description>
@@ -33,7 +33,7 @@
 		</MIMEField>
 		<MIMEField>
 			<Name>x-fixlet-modification-time</Name>
-			<Value>Fri, 15 Apr 2016 00:39:38 +0000</Value>
+			<Value>Mon, 18 Apr 2016 14:01:27 +0000</Value>
 		</MIMEField>
 		<Domain>BESC</Domain>
 		<DefaultAction ID="Action1">

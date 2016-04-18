@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
-		<Title>Windows Remote Assistance feature is not Installed</Title>
+		<Title>Warning - Remote Assistance may not be installed</Title>
 		<Description><![CDATA[<P>The Windows Remote Assistance feature is not installed by default on Windows Server Operating Systems.</P>
-<P>This fixlet uses DISM to enable the Remote Assistance feature</P>]]></Description>
+<P>This fixlet uses DISM to enable the Remote Assistance feature.</P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>name of operating system as string starts with "Win2"</Relevance>
 		<Relevance>not exists selects "* from Win32_ServerFeature where (Name like 'Remote Assistance')" of wmi</Relevance>
@@ -16,7 +16,7 @@
 		<SANSID></SANSID>
 		<MIMEField>
 			<Name>x-fixlet-modification-time</Name>
-			<Value>Fri, 15 Apr 2016 00:03:09 +0000</Value>
+			<Value>Mon, 18 Apr 2016 14:01:47 +0000</Value>
 		</MIMEField>
 		<Domain>BESC</Domain>
 		<DefaultAction ID="Action1">

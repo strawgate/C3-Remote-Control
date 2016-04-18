@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
-		<Title>Windows Firewall is Blocking Windows Remote Assistance</Title>
-		<Description><![CDATA[<ENTER a description of problem and the corrective action here>]]></Description>
+		<Title>Warning - Windows Firewall may be blocking Remote Assistance</Title>
+		<Description><![CDATA[<P><ENTER a description of problem and the corrective action here>If this fixlet is relevant than not all of the firewall rules required for Remote Assistance to be working may not be enabled.</P>
+<P><FONT color=#ff0000><STRONG>NOTE</STRONG></FONT>: This fixlet may appear relevant even if you have the right rules in place. This can commonly happen if you have created custom rules (not using the ones Group Policy generates) or if you are using a third-party Firewall. In this case you can ignore this fixlet once you've confirmed Remote Assistance is working in your environment.</P>]]></Description>
 		<Relevance><![CDATA[windows of operating system and version of operating system >= "6.1"]]></Relevance>
 		<Relevance>not (exists (names of (rules of firewall) whose (enabled of it = true and application name of it is "C:\Windows\system32\msra.exe")) and exists (names of (rules of firewall) whose (enabled of it = true and application name of it is "C:\Windows\system32\raserver.exe")) and exists (names of (rules of firewall) whose (enabled of it = true and application name of it is "C:\Windows\system32\svchost.exe")))</Relevance>
 		<Category></Category>
@@ -30,14 +31,14 @@
 		</MIMEField>
 		<MIMEField>
 			<Name>x-fixlet-modification-time</Name>
-			<Value>Fri, 15 Apr 2016 00:39:52 +0000</Value>
+			<Value>Mon, 18 Apr 2016 14:00:48 +0000</Value>
 		</MIMEField>
 		<Domain>BESC</Domain>
 		<DefaultAction ID="Action1">
 			<Description>
 				<PreLink>Click </PreLink>
 				<Link>here</Link>
-				<PostLink> to deploy this action.</PostLink>
+				<PostLink> to add the rules to the Windows Firewall.</PostLink>
 			</Description>
 			<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">wait netsh advfirewall firewall set rule group="remote assistance" new enable=Yes</ActionScript>
 		</DefaultAction>
