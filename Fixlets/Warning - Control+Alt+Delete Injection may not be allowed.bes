@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Fixlet>
+		<Title>Warning - Control+Alt+Delete Injection may not be allowed</Title>
+		<Description><![CDATA[<P>Control Alt Delete is a Secure Attention Sequence that brings the user to&nbsp;a secure desktop.</P>
+<P>By design, neither a remote user, nor an application or service can inject the Secure Attention Sequence. This prevents malicious applications from answering questions on the secure desktop or proceeding through winlogon. This potentially impacts remote assistance and other remote help software because it will prevent a remote user from answering a UAC prompt for elevation instead requiring the user to accept on behalf of the remote user.</P>
+<P>If this fixlet is relevant than Control+Alt+Delete injection is not corrently allowed for remote assistance software. You should enable this via Group Policy under: "Computer Configuration -&gt; Administrative Templates -&gt; Windows Components -&gt; Windows Logon Options" the setting is called, "Disable or enable software Secure Attention Sequence Policy" and should be set to enabled with the dropdown set to "Services"</P>]]></Description>
+		<Relevance>windows of operating system</Relevance>
+		<Relevance><![CDATA[version of operating system >= "6.0"]]></Relevance>
+		<Relevance>not in proxy agent context</Relevance>
+		<Relevance>(if (it = 0 or it = 2) then (true) else (false)) of ((value "SoftwareSASGeneration" of key "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System" of native registry as string as integer) | 0)</Relevance>
+		<Category></Category>
+		<Source>Internal</Source>
+		<SourceID></SourceID>
+		<SourceReleaseDate>2016-04-18</SourceReleaseDate>
+		<SourceSeverity></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Mon, 18 Apr 2016 13:56:15 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+	</Fixlet>
+</BES>
+
