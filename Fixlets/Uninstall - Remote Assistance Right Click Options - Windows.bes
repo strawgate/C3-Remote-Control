@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
-		<Title>Remove - Remote Assistance Right Click Options - Windows</Title>
+		<Title>Uninstall - Remote Assistance Right Click Options - Windows</Title>
 		<Description><![CDATA[<P>This fixlet removes the right-click context menu items installed by the "Remote Assistance Right Click Options" fixlets.</P>
 <P>This fixlet may also be relevant on any console operator's computers who have created their own, "Remote Assistance" right-click option.</P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
@@ -16,7 +16,7 @@
 		<SANSID></SANSID>
 		<MIMEField>
 			<Name>x-fixlet-modification-time</Name>
-			<Value>Mon, 18 Apr 2016 14:02:59 +0000</Value>
+			<Value>Mon, 18 Apr 2016 14:11:38 +0000</Value>
 		</MIMEField>
 		<Domain>BESC</Domain>
 		<DefaultAction ID="Action1">
