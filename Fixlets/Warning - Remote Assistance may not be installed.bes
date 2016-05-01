@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
 		<Title>Warning - Remote Assistance may not be installed</Title>
@@ -14,10 +15,6 @@
 		<SourceSeverity></SourceSeverity>
 		<CVENames></CVENames>
 		<SANSID></SANSID>
-		<MIMEField>
-			<Name>x-fixlet-modification-time</Name>
-			<Value>Mon, 18 Apr 2016 14:01:47 +0000</Value>
-		</MIMEField>
 		<Domain>BESC</Domain>
 		<DefaultAction ID="Action1">
 			<Description>
@@ -31,4 +28,3 @@ wait dism.exe /online /enable-feature /featurename=RemoteAssistance</ActionScrip
 		</DefaultAction>
 	</Fixlet>
 </BES>
-

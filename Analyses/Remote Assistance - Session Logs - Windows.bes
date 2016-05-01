@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Analysis>
 		<Title>Remote Assistance - Session Logs - Windows</Title>
@@ -24,30 +25,9 @@
 <LI>Time of session end</LI></UL>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance><![CDATA[exists (folders "Remote Assistance Logs" of folders "Documents" of folders of folder (name of drive of system folder & "\Users"))]]></Relevance>
-		<MIMEField>
-			<Name>bigfixme-added-time</Name>
-			<Value>Thu, 14 Apr 2016 16:23:10 GMT</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>bigfixme-modification-time</Name>
-			<Value>Thu, 14 Apr 2016 16:23:10 GMT</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>bigfixme-keywords</Name>
-			<Value>Poor Man's Remote Control</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>bigfixme-ID</Name>
-			<Value>2996922</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>x-fixlet-modification-time</Name>
-			<Value>Fri, 15 Apr 2016 00:49:19 +0000</Value>
-		</MIMEField>
 		<Domain>BESC</Domain>
 		<Property Name="Remote Assistance - Incoming Connection Established - Windows" ID="3"><![CDATA[(xpath "CONNECTION_ESTABLISHED" of it as text, xpath "INCOMING_IP_ADDRESS" of it as text, node value of attribute "DATE" of xpath "CONNECTION_ESTABLISHED" of it as string, node value of attribute "TIME" of xpath "CONNECTION_ESTABLISHED" of it as string) of  xpaths "/SESSION" of xml documents whose (exists xpath "/SESSION/INVITATION_OPENED" of it) of files of folders "Remote Assistance Logs" of folders "Documents" of folders of folder (name of drive of system folder & "\Users")]]></Property>
 		<Property Name="Remote Assistance - Incoming Control Granted - Windows" ID="4"><![CDATA[(xpath "CONNECTION_ESTABLISHED" of it as text | "none", xpath "INCOMING_IP_ADDRESS" of it as text | "none", node value of attribute "DATE" of xpath "EXPERT_CONTROL_STARTED" of it as string | "none", node value of attribute "TIME" of xpath "EXPERT_CONTROL_STARTED" of it as string | "none") of  xpaths "/SESSION" of xml documents whose (exists xpath "/SESSION/EXPERT_CONTROL_STARTED" of it and exists xpath "/SESSION/INVITATION_OPENED" of it) of files of folders "Remote Assistance Logs" of folders "Documents" of folders of folder (name of drive of system folder & "\Users")]]></Property>
 		<Property Name="Remote Assistance - Incoming Session Times - Windows" ID="5"><![CDATA[(xpath "CONNECTION_ESTABLISHED" of it as text | "none", attribute "DATE" of xpath "CONNECTION_ESTABLISHED" of it as text | "none", attribute "TIME" of xpath "CONNECTION_ESTABLISHED" of it as text | "none", attribute "DATE" of xpath "CONNECTION_ENDED" of it as text | "none", attribute "TIME" of xpath "CONNECTION_ENDED" of it as text | "none") of  xpaths "/SESSION" of xml documents whose (exists xpath "/SESSION/INVITATION_OPENED" of it) of files of folders "Remote Assistance Logs" of folders "Documents" of folders of folder (name of drive of system folder & "\Users")]]></Property>
 	</Analysis>
 </BES>
-

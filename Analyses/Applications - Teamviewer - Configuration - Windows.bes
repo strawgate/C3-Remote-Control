@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Analysis>
 		<Title>Applications - Teamviewer - Configuration - Windows</Title>
-		<Description>Covers the configuation of TeamViewer on the client.</Description>
+		<Description>Covers the configuation of TeamViewer on the client. </Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists key "HKEY_LOCAL_MACHINE\software\microsoft\windows\currentversion\uninstall\teamviewer" of x32 registry</Relevance>
 		<Source>Internal</Source>
 		<SourceReleaseDate>2016-04-18</SourceReleaseDate>
-		<MIMEField>
-			<Name>x-fixlet-modification-time</Name>
-			<Value>Tue, 19 Apr 2016 03:16:34 +0000</Value>
-		</MIMEField>
 		<Domain>BESC</Domain>
 		<Property Name="Teamviewer - Always On - Windows" ID="1">if (value "Always_Online" of key "HKEY_LOCAL_MACHINE\Software\TeamViewer" of x32 registry as string = "1") then "Enabled" else "Disabled"</Property>
 		<Property Name="Teamviewer - Client ID - Windows" ID="2">value "ClientID" of key "HKEY_LOCAL_MACHINE\Software\TeamViewer" of x32 registry</Property>

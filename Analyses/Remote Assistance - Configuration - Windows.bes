@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Analysis>
 		<Title>Remote Assistance - Configuration - Windows</Title>
@@ -11,26 +12,6 @@
 <LI>Users and Groups allowed to initiate offers to this computer</LI></UL>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry</Relevance>
-		<MIMEField>
-			<Name>bigfixme-added-time</Name>
-			<Value>Thu, 14 Apr 2016 16:23:09 GMT</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>bigfixme-modification-time</Name>
-			<Value>Thu, 14 Apr 2016 16:23:09 GMT</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>bigfixme-keywords</Name>
-			<Value>Poor Man's Remote Control</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>bigfixme-ID</Name>
-			<Value>2996921</Value>
-		</MIMEField>
-		<MIMEField>
-			<Name>x-fixlet-modification-time</Name>
-			<Value>Fri, 15 Apr 2016 00:47:06 +0000</Value>
-		</MIMEField>
 		<Domain>BESC</Domain>
 		<Property Name="Remote Assistance - Logging - Windows" ID="1">if ((value "LoggingEnabled" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
 		<Property Name="Remote Assistance - Unsolicited View - Windows" ID="2">if ((value "fAllowUnsolicited" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
@@ -38,4 +19,3 @@
 		<Property Name="Remote Assistance - Allowed Helpers - Windows" ID="4">if (exists key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) then (names of values of key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) else ("none")</Property>
 	</Analysis>
 </BES>
-
