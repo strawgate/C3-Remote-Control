@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Remote Desktop - Session Logs - Windows</Title>
+		<Description>Provides information about previous remote desktop sessions on the system</Description>
+		<Relevance>windows of operating system</Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2016-05-01</SourceReleaseDate>
+		<Domain>BESC</Domain>
+		<Property Name="Remote Desktop - Incoming Sessions - Windows" ID="1">(preceding text of first "%0d%0a" of following text of first "User: " of description of it, time generated of it) of records whose (event id of it = 21 and description of it does not contain "LOCAL")of event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational"</Property>
+	</Analysis>
+</BES>
