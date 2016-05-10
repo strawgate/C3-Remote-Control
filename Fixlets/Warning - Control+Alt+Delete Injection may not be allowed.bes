@@ -5,7 +5,8 @@
 		<Title>Warning - Control+Alt+Delete Injection may not be allowed</Title>
 		<Description><![CDATA[<P>Control Alt Delete is a Secure Attention Sequence that brings the user to&nbsp;a secure desktop.</P>
 <P>By design, neither a remote user, nor an application or service can inject the Secure Attention Sequence. This prevents malicious applications from answering questions on the secure desktop or proceeding through winlogon. This potentially impacts remote assistance and other remote help software because it will prevent a remote user from answering a UAC prompt for elevation instead requiring the user to accept on behalf of the remote user.</P>
-<P>If this fixlet is relevant than Control+Alt+Delete injection is not corrently allowed for remote assistance software. You should enable this via Group Policy under: "Computer Configuration -&gt; Administrative Templates -&gt; Windows Components -&gt; Windows Logon Options" the setting is called, "Disable or enable software Secure Attention Sequence Policy" and should be set to enabled with the dropdown set to "Services"</P>]]></Description>
+<P>If this fixlet is relevant than Control+Alt+Delete injection is not corrently allowed for remote assistance software. You should enable this via Group Policy under: "Computer Configuration -&gt; Administrative Templates -&gt; Windows Components -&gt; Windows Logon Options" the setting is called, "Disable or enable software Secure Attention Sequence Policy" and should be set to enabled with the dropdown set to "Services"</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance><![CDATA[version of operating system >= "6.0"]]></Relevance>
 		<Relevance>not in proxy agent context</Relevance>

@@ -4,7 +4,8 @@
 	<Fixlet>
 		<Title>Deploy - Remote Assistance Right Click Options - 1.0.0.0 - Windows</Title>
 		<Description><![CDATA[<P>This fixlet installs a right-click context menu for the logged on BigFix console operator.</P>
-<P>This right-click context menu takes the selected computer and passes it's name into the msra.exe command line allowing a technician to initiate a remote assistance session.</P>]]></Description>
+<P>This right-click context menu takes the selected computer and passes it's name into the msra.exe command line allowing a technician to initiate a remote assistance session.</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists current user</Relevance>
 		<Relevance>exists regapp "BESConsole.exe"</Relevance>

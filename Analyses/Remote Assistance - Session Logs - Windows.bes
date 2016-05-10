@@ -6,23 +6,24 @@
 		<Description><![CDATA[<P>Pulls data from the Remote Assistance session logs in each user's documents folder.</P>
 <P>For&nbsp;ALL&nbsp;incoming connections that are established&nbsp;the following is collected:</P>
 <UL>
-<LI>Full name of originating user</LI>
-<LI>IP address of originating request</LI>
-<LI>Date of request</LI>
+<LI>Full name of originating user 
+<LI>IP address of originating request 
+<LI>Date of request 
 <LI>Time of request</LI></UL>
 <P>For incoming connections where <STRONG>control is granted</STRONG>, the following is collected:</P>
 <UL>
-<LI>Full name of originating user</LI>
-<LI>IP address of originating request</LI>
-<LI>Date of request</LI>
+<LI>Full name of originating user 
+<LI>IP address of originating request 
+<LI>Date of request 
 <LI>Time of request</LI></UL>
 <P>For all sessions, the following is collected:</P>
 <UL>
-<LI>Full name of originating user</LI>
-<LI>Date of session start</LI>
-<LI>Time of session start</LI>
-<LI>Date of session end</LI>
-<LI>Time of session end</LI></UL>]]></Description>
+<LI>Full name of originating user 
+<LI>Date of session start 
+<LI>Time of session start 
+<LI>Date of session end 
+<LI>Time of session end</LI></UL>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance><![CDATA[exists (folders "Remote Assistance Logs" of folders "Documents" of folders of folder (name of drive of system folder & "\Users"))]]></Relevance>
 		<Domain>BESC</Domain>

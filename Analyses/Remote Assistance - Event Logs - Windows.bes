@@ -5,7 +5,8 @@
 		<Title>Remote Assistance - Event Logs - Windows</Title>
 		<Description><![CDATA[<P>Pulls data from the Remote Assistance event log.</P>
 <P>For outgoing remote assistance requests: Who they were to, who made the request, and what time</P>
-<P>For incoming remote assistance requests: Who received it, and what time (not possible to tell who made the request)</P>]]></Description>
+<P>For incoming remote assistance requests: Who received it, and what time (not possible to tell who made the request)</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists event log "Microsoft-Windows-RemoteAssistance/Operational" | false</Relevance>
 		<Source>Internal</Source>

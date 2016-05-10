@@ -6,10 +6,11 @@
 		<Description><![CDATA[<P>Provides information regarding the remote assistance configuration of a computer. </P>
 <P>Specifically providing information on the states of the following settings</P>
 <UL>
-<LI>Detailed Logging</LI>
-<LI>Unsolicited remote assistance (View)</LI>
-<LI>Unsolicited remote assistance (Control)</LI>
-<LI>Users and Groups allowed to initiate offers to this computer</LI></UL>]]></Description>
+<LI>Detailed Logging 
+<LI>Unsolicited remote assistance (View) 
+<LI>Unsolicited remote assistance (Control) 
+<LI>Users and Groups allowed to initiate offers to this computer</LI></UL>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry</Relevance>
 		<Domain>BESC</Domain>

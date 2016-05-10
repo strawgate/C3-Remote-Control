@@ -3,11 +3,13 @@
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Analysis>
 		<Title>Remote Desktop - Session Logs - Windows</Title>
-		<Description>Provides information about previous remote desktop sessions on the system</Description>
+		<Description><![CDATA[<P>Provides information about previous remote desktop sessions on the system.</P>
+<P><FONT color=#ff0000><STRONG>NOTE:</STRONG></FONT> Due to issues with how BigFix parses the event log: <A href="https://forum.bigfix.com/t/the-event-record-inspector-is-returning-an-error-for-the-description-of-the-event/17006">https://forum.bigfix.com/t/the-event-record-inspector-is-returning-an-error-for-the-description-of-the-event/17006</A>&nbsp;this will NOT return results for users resuming their RDP sessions. This will only return results for users starting brand new user sessions over RDP.</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Source>Internal</Source>
 		<SourceReleaseDate>2016-05-01</SourceReleaseDate>
 		<Domain>BESC</Domain>
-		<Property Name="Remote Desktop - Incoming Sessions - Windows" ID="1">(preceding text of first "%0d%0a" of following text of first "User: " of description of it, time generated of it) of records whose (event id of it = 21 and description of it does not contain "LOCAL")of event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational"</Property>
+		<Property Name="Remote Desktop - Incoming Sessions - Windows" ID="1">(preceding text of first "%0d%0a" of following text of first "User: " of description of it | "Unknown", time generated of it, (if (it = 21) then ("New Session") else ("Resumed Session")) of (event id of it), following text of last ": " of description of it) of records whose (exists description of it and (event id of it = 21 or event id of it = 25) and description of it does not contain "LOCAL") of event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational"</Property>
 	</Analysis>
 </BES>

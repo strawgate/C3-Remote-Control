@@ -3,7 +3,8 @@
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Analysis>
 		<Title>Applications - Teamviewer - Configuration - Windows</Title>
-		<Description>Covers the configuation of TeamViewer on the client. </Description>
+		<Description><![CDATA[<P>Covers the configuation of TeamViewer on the client. </P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists key "HKEY_LOCAL_MACHINE\software\microsoft\windows\currentversion\uninstall\teamviewer" of x32 registry</Relevance>
 		<Source>Internal</Source>

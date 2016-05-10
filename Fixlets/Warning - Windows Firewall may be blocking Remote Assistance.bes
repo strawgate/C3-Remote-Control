@@ -3,8 +3,9 @@
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
 		<Title>Warning - Windows Firewall may be blocking Remote Assistance</Title>
-		<Description><![CDATA[<P><ENTER a description of problem and the corrective action here>If this fixlet is relevant than not all of the firewall rules required for Remote Assistance to be working may not be enabled.</P>
-<P><FONT color=#ff0000><STRONG>NOTE</STRONG></FONT>: This fixlet may appear relevant even if you have the right rules in place. This can commonly happen if you have created custom rules (not using the ones Group Policy generates) or if you are using a third-party Firewall. In this case you can ignore this fixlet once you've confirmed Remote Assistance is working in your environment.</P>]]></Description>
+		<Description><![CDATA[<P><ENTER here action corrective the and problem of description a>If this fixlet is relevant than not all of the firewall rules required for Remote Assistance to be working may not be enabled.</P>
+<P><FONT color=#ff0000><STRONG>NOTE</STRONG></FONT>: This fixlet may appear relevant even if you have the right rules in place. This can commonly happen if you have created custom rules (not using the ones Group Policy generates) or if you are using a third-party Firewall. In this case you can ignore this fixlet once you've confirmed Remote Assistance is working in your environment.</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance><![CDATA[windows of operating system and version of operating system >= "6.1"]]></Relevance>
 		<Relevance>not (exists (names of (rules of firewall) whose (enabled of it = true and application name of it is "C:\Windows\system32\msra.exe")) and exists (names of (rules of firewall) whose (enabled of it = true and application name of it is "C:\Windows\system32\raserver.exe")) and exists (names of (rules of firewall) whose (enabled of it = true and application name of it is "C:\Windows\system32\svchost.exe")))</Relevance>
 		<Category></Category>

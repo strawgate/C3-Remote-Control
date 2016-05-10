@@ -4,7 +4,8 @@
 	<Fixlet>
 		<Title>Uninstall - Remote Assistance Right Click Options - Windows</Title>
 		<Description><![CDATA[<P>This fixlet removes the right-click context menu items installed by the "Remote Assistance Right Click Options" fixlets.</P>
-<P>This fixlet may also be relevant on any console operator's computers who have created their own, "Remote Assistance" right-click option.</P>]]></Description>
+<P>This fixlet may also be relevant on any console operator's computers who have created their own, "Remote Assistance" right-click option.</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists current user</Relevance>
 		<Relevance>exists key "Software\BigFix\Enterprise Console\Settings\ComputerListContextMenuExtensions\Remote Assistance" of current user key of registry</Relevance>

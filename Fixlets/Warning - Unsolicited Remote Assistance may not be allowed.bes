@@ -3,10 +3,11 @@
 <BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
 	<Fixlet>
 		<Title>Warning - Unsolicited Remote Assistance may not be allowed</Title>
-		<Description><![CDATA[<P><ENTER here action corrective the and problem of description a>Unsolicited Windows Remote Assistance requires setting a Group Policy setting:</P>
+		<Description><![CDATA[<P><ENTER a description of problem and the corrective action here>Unsolicited Windows Remote Assistance requires setting a Group Policy setting:</P>
 <P>GP Path: Computer Configuration/Policies/Administrative Templates/System/Remote Assistance</P>
 <BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
-<P>Setting Name: Configure Remote Assistance<BR>Required State: Enabled<BR>Required Value: Allow Helpers to remotely control this computer</P></BLOCKQUOTE>]]></Description>
+<P>Setting Name: Configure Remote Assistance<BR>Required State: Enabled<BR>Required Value: Allow Helpers to remotely control this computer</P></BLOCKQUOTE>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>(value "fAllowUnsolicitedFullControl" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer | 0) = 0</Relevance>
 		<Category></Category>

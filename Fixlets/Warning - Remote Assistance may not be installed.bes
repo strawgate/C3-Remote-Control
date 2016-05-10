@@ -4,7 +4,8 @@
 	<Fixlet>
 		<Title>Warning - Remote Assistance may not be installed</Title>
 		<Description><![CDATA[<P>The Windows Remote Assistance feature is not installed by default on Windows Server Operating Systems.</P>
-<P>This fixlet uses DISM to enable the Remote Assistance feature.</P>]]></Description>
+<P>This fixlet uses DISM to enable the Remote Assistance feature.</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>name of operating system as string starts with "Win2"</Relevance>
 		<Relevance>not exists selects "* from Win32_ServerFeature where (Name like 'Remote Assistance')" of wmi</Relevance>
