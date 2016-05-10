@@ -1,2 +1,2 @@
-# Poor-Man-s-Remote-Control
-Poor Man's Remote Control
+# C3 Remote Control
+C3 Remote Control
