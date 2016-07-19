@@ -14,9 +14,9 @@
 		<Relevance>windows of operating system</Relevance>
 		<Relevance>exists key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry</Relevance>
 		<Domain>BESC</Domain>
-		<Property Name="Remote Assistance - Logging - Windows" ID="1">if ((value "LoggingEnabled" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
-		<Property Name="Remote Assistance - Unsolicited View - Windows" ID="2">if ((value "fAllowUnsolicited" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
-		<Property Name="Remote Assistance - Unsolicited Control - Windows" ID="3">if ((value "fAllowUnsolicitedFullControl" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
-		<Property Name="Remote Assistance - Allowed Helpers - Windows" ID="4">if (exists key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) then (names of values of key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) else ("none")</Property>
+		<Property Name="Remote Assistance - Logging - Windows" ID="1" EvaluationPeriod="PT12H">if ((value "LoggingEnabled" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
+		<Property Name="Remote Assistance - Unsolicited View - Windows" ID="2" EvaluationPeriod="PT12H">if ((value "fAllowUnsolicited" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
+		<Property Name="Remote Assistance - Unsolicited Control - Windows" ID="3" EvaluationPeriod="PT12H">if ((value "fAllowUnsolicitedFullControl" of key "HKLM\Software\policies\Microsoft\Windows NT\Terminal Services" of registry as integer = 1) | false) then "Enabled" else "Disabled" | "Disabled"  </Property>
+		<Property Name="Remote Assistance - Allowed Helpers - Windows" ID="4" EvaluationPeriod="PT12H">if (exists key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) then (names of values of key "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services\RAUnsolicit" of registry) else ("none")</Property>
 	</Analysis>
 </BES>

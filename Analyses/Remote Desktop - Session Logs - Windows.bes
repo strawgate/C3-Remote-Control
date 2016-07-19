@@ -10,6 +10,6 @@
 		<Source>Internal</Source>
 		<SourceReleaseDate>2016-05-01</SourceReleaseDate>
 		<Domain>BESC</Domain>
-		<Property Name="Remote Desktop - Incoming Sessions - Windows" ID="1">(preceding text of first "%0d%0a" of following text of first "User: " of description of it | "Unknown", time generated of it, (if (it = 21) then ("New Session") else ("Resumed Session")) of (event id of it), following text of last ": " of description of it) of records whose (exists description of it and (event id of it = 21 or event id of it = 25) and description of it does not contain "LOCAL") of event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational"</Property>
+		<Property Name="Remote Desktop - Incoming Sessions - Windows" ID="1" EvaluationPeriod="PT6H">(preceding text of first "%0d%0a" of following text of first "User: " of description of it | "Unknown", time generated of it, (if (it = 21) then ("New Session") else ("Resumed Session")) of (event id of it), following text of last ": " of description of it) of records whose (exists description of it and (event id of it = 21 or event id of it = 25) and description of it does not contain "LOCAL") of event log "Microsoft-Windows-TerminalServices-LocalSessionManager/Operational"</Property>
 	</Analysis>
 </BES>
