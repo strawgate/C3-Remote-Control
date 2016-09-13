@@ -9,6 +9,6 @@
 		<Source>Internal</Source>
 		<SourceReleaseDate>2016-04-18</SourceReleaseDate>
 		<Domain>BESC</Domain>
-		<Property Name="Teamviewer - Installed - Windows" ID="1">exists key "HKEY_LOCAL_MACHINE\Software\TeamViewer" of x32 registry</Property>
+		<Property Name="Teamviewer - Installed - Windows" ID="1" EvaluationPeriod="P1D">exists key "HKEY_LOCAL_MACHINE\Software\TeamViewer" of x32 registry</Property>
 	</Analysis>
 </BES>
