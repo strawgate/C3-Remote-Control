@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Fixlet>
+		<Title>Config - Microsoft Remote Desktop - Enable RDP - Windows</Title>
+		<Description><![CDATA[<P>This Fixlet enables RDP on the targeted machine.</P>
+<P>For general information or to report issues with C3 Remote Control content please visit GitHub here: <A href="https://github.com/strawgate/C3-Remote-Control">https://github.com/strawgate/C3-Remote-Control</A></P>]]></Description>
+		<Relevance>windows of operating system</Relevance>
+		<Relevance>exists values "fDenyTSConnections" whose (it != 0) of key "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" of registry</Relevance>
+		<Category></Category>
+		<Source>Internal</Source>
+		<SourceID></SourceID>
+		<SourceReleaseDate>2017-02-01</SourceReleaseDate>
+		<SourceSeverity></SourceSeverity>
+		<CVENames></CVENames>
+		<SANSID></SANSID>
+		<Domain>BESC</Domain>
+		<DefaultAction ID="Action1">
+			<Description>
+				<PreLink>Click </PreLink>
+				<Link>here</Link>
+				<PostLink> to deploy this action.</PostLink>
+			</Description>
+			<ActionScript MIMEType="application/x-Fixlet-Windows-Shell">regset "[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server]" "fDenyTSConnections"=dword:00000000
+
+waithidden "{pathname of file "sc.exe" of system folder}" config TermService start= demand
+
+waithidden "{pathname of file "sc.exe" of system folder}" start TermService
+</ActionScript>
+		</DefaultAction>
+	</Fixlet>
+</BES>
